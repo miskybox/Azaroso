@@ -1,0 +1,11 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #exit-button {
+    background-color: #7C1B1B;
+    color: #E5B80B;
+  }

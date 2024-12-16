@@ -1,0 +1,100 @@
+body {
+    font-family: "Chau Philomene One", sans-serif;
+  }
+/*
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #E5B80B;
+  }*/
+  .chau-philomene-one-regular {
+    font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .chau-philomene-one-regular-italic {
+    font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+/* Welcome Page Styles */
+
+.welcome-content h1 {
+    font-size: 2rem; 
+    color:#7C1B1B;
+    margin-bottom: 20px; /* Separación del GIF */
+    text-align: center; 
+    z-index: 1; /* Asegurar que quede al frente */
+    position: absolute; /* Evitar que quede oculto */
+}
+
+.welcome-page {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Toda la altura visible */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear hacia arriba */
+    align-items: center;
+    background-color: #431C53; /* Color uniforme en todo el fondo */
+    overflow: hidden; /* Evita el scroll innecesario */
+    padding: 20px;
+}
+
+.welcome-content {
+    text-align: center;
+    margin-top: 20px; /* Espaciado desde la parte superior */
+}
+
+.welcome-gif-container {
+    max-width: 50%; /* GIF más pequeño en desktop */
+    max-height: 40%; /* Altura controlada */
+    margin: 20px 0; /* Espaciado vertical */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-gif {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.mystic-button {
+    background: #FFD700;
+    border: none;
+    padding: 15px 30px; /* Botón más grande */
+    font-size: 1.2rem;
+    color: #431C53;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px; /* Espaciado para estar más abajo */
+}
+
+.mystic-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #FFD700;
+}
+
+/* Responsive: Ajustes para mobile */
+@media (max-width: 768px) {
+    .welcome-content h1 {
+        font-size: 1.8rem; /* Tamaño reducido */ 
+    }
+
+    .welcome-gif-container {
+        max-width: 90%; /* Ocupar más ancho */
+        max-height: 50%; /* Ajuste proporcional */
+    }
+
+    .mystic-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+}
