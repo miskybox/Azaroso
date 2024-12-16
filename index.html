@@ -8,39 +8,33 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/game.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
 </head>
 <body>
-      <!-- Welcome Page -->
-       <!--header-->
-      <div class="welcome-page" id="welcome-page">
+    <div class="welcome-page" id="welcome-page">
         <div class="welcome-content">
             <h1 class="h1">¡Bienvenido a la Máquina Mística!</h1>
-        <!--body-->
-        <div class="welcome-gif-container">
-            <img src="/assets/azaroso-gif.gif" alt="Azaroso GIF" class="welcome-gif">
-        </div>
-        <!--footer-->
+            <div class="welcome-gif-container">
+                <img src="/assets/azaroso-gif.gif" alt="Azaroso GIF" class="welcome-gif">
+            </div>
         </div>
         <button id="start-button" class="mystic-button">¡Consulta tu Suerte!</button>
     </div>
-      
-  <!-- Game Page -->
-   <!--header-->
-  <div class="game-page" id="game-page" style="display: none;">
-    <h2 class="h2">Descubre tu Destino</h2>
-
-    <div class="user-input-container">
-      <input type="text" id="user-name" placeholder="Ingresa tu nombre">
-      <button id="add-user" class="mystic-button">Añadir</button>
+    
+    <div class="game-page" id="game-page" style="display: none;">
+        <h2 class="h2">Descubre tu Destino</h2>
+        <div class="user-input-container">
+            <input type="text" id="user-name" placeholder="Ingresa tu nombre">
+            <button id="add-user" class="mystic-button">Añadir</button>
+        </div>
+        <div class="user-list" id="user-list"></div>
+        <button id="exit-button" class="mystic-button">Salir</button>
     </div>
 
+    <!-- Audio para el efecto de sonido -->
+    <audio id="button-sound" src="/assets/arab_sound.wav"></audio>
 
-    <div class="user-list" id="user-list"></div>
-    <button id="exit-button" class="mystic-button">Salir</button>
-  </div>
-
-  <script src="/src/script.js"></script>
+    <script src="/src/script.js"></script>
 </body>
 </html>
