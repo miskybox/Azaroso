@@ -1,10 +1,20 @@
-        /* WELCOME.CSS */
+/* WELCOME.CSS */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Chau Philomene One", sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Evita scroll innecesario */
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .welcome-page {
@@ -31,8 +41,10 @@ body {
 }
 
 .welcome-content h1 {
-  font-size: 2rem;
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 2.5rem;
   color: #7c1b1b;
+  text-shadow: 0 0 10px #6c3483;
   margin: 10px 0; /* Ajuste vertical */
   padding: 10px;
   z-index: 2; /* Asegura que quede encima del GIF */
@@ -55,7 +67,7 @@ body {
 }
 
 .mystic-button {
-  background: #ffd700;
+  background: #e5b80b;
   border: none;
   padding: 15px 30px;
   font-size: 1.2rem;
@@ -69,10 +81,10 @@ body {
 
 .mystic-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px #ffd700;
+  box-shadow: 0 0 10px #e5b80b;
 }
 
-/* Responsive: Ajustes para mobile */
+/*Responsive: Ajustes para mobile */
 @media (max-width: 768px) {
   .welcome-page {
     flex-direction: column;

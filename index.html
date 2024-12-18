@@ -7,34 +7,58 @@
     <link rel="stylesheet" href="/styles/welcome.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/game.css">
+    <link rel="stylesheet" href="/styles/cards.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:,">
+    <link rel="icon" href="data:,"> 
+    <a target="_blank" href="https://icons8.com/icon/SWIdiTA6RGsh/reboot"></a><a target="_blank" href="https://icons8.com"></a>
 </head>
 <body>
+       <!--Welcome Page-->  
     <div class="welcome-page" id="welcome-page">
-        <div class="welcome-content">
+      <div class="welcome-content"> 
             <h1 class="h1">¡Bienvenido a la Máquina Mística!</h1>
             <div class="welcome-gif-container">
                 <img src="/assets/azaroso-gif.gif" alt="Azaroso GIF" class="welcome-gif">
             </div>
-        </div>
+      </div> 
         <button id="start-button" class="mystic-button">¡Consulta tu Suerte!</button>
     </div>
-    
-    <div class="game-page" id="game-page" style="display: none;">
+                    
+                      <!--Game Page--> 
+    <div class="game-page" id="game-page">
+         <h1 class="h1">El Azaroso</h1>  
         <h2 class="h2">Descubre tu Destino</h2>
         <div class="user-input-container">
             <input type="text" id="user-name" placeholder="Ingresa tu nombre">
-            <button id="add-user" class="mystic-button">Añadir</button>
+            <button id="add-user" class="add-user">Añadir</button>
         </div>
         <div class="user-list" id="user-list"></div>
-        <button id="exit-button" class="mystic-button">Salir</button>
-    </div>
 
-    <!-- Audio para el efecto de sonido -->
+                     <!--Game cards--> 
+       <section class="game-cards" id="game-cards" >
+        <div class="cards-container">
+        <button class="card" id="card1">
+            <img src="/assets/azaroso_carta-b.png" alt="Card 1"> 
+        </button>
+    </section>
+                              <!--Footer Buttons--> 
+        
+         <div class="game-buttons">
+            <button id="reset-button" class="reset-button">
+                <img src="assets/icon_reiniciar.png" alt="Reiniciar icono">  
+            </button>
+            <button id="exit-button" class="exit-button">
+                <img src="assets/back.svg" alt="salir"> </button>
+         </div>
+    </div>           
+</div>
+         <!-- Audio para el efecto de sonido --> 
     <audio id="button-sound" src="/assets/arab_sound.wav"></audio>
+    <audio id="crystal-sound" src="/assets/mouse_click_sound.wav"></audio>
+
 
     <script src="/src/script.js"></script>
 </body>
 </html>
+

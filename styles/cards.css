@@ -1,0 +1,125 @@
+/* Game-cards */
+.game-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #e5b80b;
+}
+
+.card-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  max-width: 6em;
+  height: auto;
+  background: url("/assets/azaroso_carta-b.png") center/cover no-repeat;
+  border: none;
+  transition: transform 0.5s;
+  cursor: pointer;
+  position: relative;
+  margin: 2em;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flipped img {
+  transform: rotateY(180deg);
+}
+
+.card.flipped {
+  background: #e5b80b;
+  color: #431c53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transform: rotateY(-180deg);
+}
+
+.card .message {
+  font-family: "Chau Philomene One", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card.flipped .message {
+  height: 11em;
+  width: 5em;
+  opacity: 1;
+  transform: rotateY(-180deg) translate(-50%, -50%);
+  background-color: #e5b80b;
+  font-family: "Chau Philomene One", sans-serif;
+}
+
+.game-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reset-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.exit-button {
+  background-color: #e5b80b;
+  color: #431c53;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.exit-button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .user-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .user-item {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    max-width: 120px;
+  }
+}
